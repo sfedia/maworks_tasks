@@ -127,10 +127,6 @@ def expand_product_cards(up_to: int = 100) -> None:
         driver.implicitly_wait(1)
 
 
-class ProductSold(Exception):
-    pass
-
-
 def price_text_to_float(price_text: str) -> float:
     return float(re.search(r"\d+(?:\.\d+)?", price_text).group(0))
 
