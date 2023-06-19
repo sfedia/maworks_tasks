@@ -167,7 +167,6 @@ def transform_product_data(raw_data: tp.List[tp.Dict[str, tp.Any]], brands_patte
     result_data = []
     for product in raw_data:
         if product["sold"]:
-            print("sold")
             continue
         data_sku = product["sku"]
         name = product["name"]
